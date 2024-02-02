@@ -1,0 +1,324 @@
+@charset "UTF-8";
+#wrap{
+    width: 100%;
+    background-color: #eee6de;
+}
+#header{
+    width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 2rem;
+}
+.header .logo{
+    width: 250px;
+}
+.header .logo img{
+    margin-left: 10px;
+}
+.header .nav{}
+.header .nav ul{
+    display: flex;
+}
+.header .nav ul li{
+    padding-right: 20px;
+    width: 180px;
+    height: 40px;
+    overflow: hidden;
+}
+.header .nav ul li:last-child{
+    padding-right: 0;
+}
+.header .nav ul li a{
+    width: 100%;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: 'Limelight'; 
+    color: #293f3a;
+    background-color: #b77855;
+}
+.header .nav ul li a:hover{
+    color: #b77855;
+}
+.header .nav ul li a .word{
+    width: 180px;
+    height: 60px;
+    perspective: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.header .nav ul li a .word span{
+    float: left;
+}
+.header .nav ul li a:hover .word span{
+    animation: ani1 0.8s ease 1;
+}
+.header .nav ul li a:hover .word span:nth-of-type(1){animation-delay: 0.02s;}
+.header .nav ul li a:hover .word span:nth-of-type(2){animation-delay: 0.06s;}
+.header .nav ul li a:hover .word span:nth-of-type(3){animation-delay: 0.1s;}
+.header .nav ul li a:hover .word span:nth-of-type(4){animation-delay: 0.14s;}
+.header .nav ul li a:hover .word span:nth-of-type(5){animation-delay: 0.18s;}
+.header .nav ul li a:hover .word span:nth-of-type(6){animation-delay: 0.22s;}
+.header .nav ul li a:hover .word span:nth-of-type(7){animation-delay: 0.26s;}
+.header .nav ul li a:hover .word span:nth-of-type(8){animation-delay: 0.3s;}
+@keyframes ani1{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-60%);}
+}
+
+.nav_mobile{
+    display: none;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.nav_mobile span{
+    display: block; 
+    width: 40px;
+    height: 3px;
+    background-color: #293f3a;
+    position: relative;
+    z-index: 100;
+    border-radius: 20px;
+}
+.nav_mobile span::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #293f3a;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+.nav_mobile span::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 40px;
+    height:3px;
+    background-color: #293f3a;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+
+/* accordion */
+#accordion{
+    width: 100%;
+}
+#accordion h2{
+    font-size: 150px;
+    color: #293f3a;
+    font-family: 'Pretendard-Regular';
+    text-align: center;
+    margin: 200px 0;
+}
+#accordion > span{
+    font-size: 300px;
+    color: #293f3a;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    font-family: 'Limelight';
+    opacity: 0.3;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+#accordion>img{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translateX(-50%);  
+}
+.accordion{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.accordion > p{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.accordion_item{
+    background-color: #293f3a;
+    color: #eee6de;
+}
+.accordion_item button{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 16px 0;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    position: relative;
+}
+.accordion .accordion_item button[aria-expanded="true"]{}
+.accordion .accordion_item button .ac_tit{
+    width: 100%;
+    color: #eee6de;
+    padding: 5% 9%;
+    display: block;
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
+    /* overflow: hidden; */
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.accordion .accordion_item:hover button .ac_tit{
+    padding-left: 15%;
+}
+.accordion .accordion_item button .ac_tit::after{
+    content: "Q";
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    left: 2%;
+    font-size: 200px;
+    font-family: 'Limelight';
+    opacity: 0.3;
+    transition: all 0.3s;
+    width: 100%;
+}
+.accordion .accordion_item:hover button .ac_tit::after{
+    opacity: 1;
+}
+.accordion .accordion_item button .icon{
+    display: inline-block;
+    background-color: #eee6de;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    color: #293f3a;
+    cursor: pointer;
+}
+.accordion .accordion_item button .icon::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 11px;
+    height: 2px;
+    background-color: #293f3a;
+    
+}
+.accordion .accordion_item button .icon::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 2px;
+    height: 11px;
+    background-color: #293f3a;
+}
+.accordion .accordion_item .accordion_cont{
+    opacity: 0;
+    height: 0;
+    /* overflow: hidden; */
+}
+
+.accordion .accordion_item button[aria-expanded="true"] .icon::after{
+    width: 0;
+}
+.accordion .accordion_item button[aria-expanded="true"] + .accordion_cont{
+    opacity: 1;
+    height: 100%;
+    transition: all 0.3s;
+}
+.accordion .accordion_item .accordion_cont P{
+    font-size: 18px;
+    text-align: justify;
+    padding: 5% 15%;
+    font-family: 'Pretendard-Regular';
+    font-weight: lighter;
+}
+
+/* footer */
+#footer{
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    background-color: #293f3a;
+    margin-top: 70px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 3% 0;
+    position: relative;
+    overflow: hidden;
+}
+.footer .f_logo{
+    width: 50%;
+}
+.footer .f_inner{
+    width: 50%;
+    text-align: right;
+}
+.footer .f_logo p{
+    font-size: 4vw;
+    font-weight: 900;
+    color: #b05044;
+    font-family: 'Merriweather'; 
+}
+.footer .f_logo p:nth-of-type(2){
+    display: inline-block;
+}
+.footer .f_logo img{
+    display: inline-block;
+    margin-left: 20%;
+}
+.footer .f_nav ul{
+    display: flex;
+    justify-content: end;
+}
+.footer .f_nav ul li{}
+.footer .f_nav ul li a{
+    display: block;
+    font-size: 30px;
+    font-family: 'Limelight';
+    color: #eee6de;
+    margin-left: 25px;
+    transition: all 0.2s;
+}
+.footer .f_nav ul li a:hover{
+    color: #b77855;
+}
+.footer .f_copy{
+    padding-top: 15%;
+    color: #eee6de;
+}
+.footer .f_copy a{
+    display: block;
+    color: #eee6de;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footer .f_copy p{
+    margin-bottom: 20px;
+    font-weight: bold;
+}

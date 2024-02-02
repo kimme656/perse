@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                 <div class="row">
+                     <div class="header">
+                        <nav class="nav">
+                            <ul>
+                                <li>
+                                    <a href="../about/index.html">
+                                        <p class="word">
+                                            <span>a<br>a</span>
+                                            <span>b<br>b</span>
+                                            <span>o<br>o</span>
+                                            <span>u<br>u</span>
+                                            <span>t<br>t</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../menu/index.html">
+                                        <p class="word">
+                                            <span>m<br>m</span>
+                                            <span>e<br>e</span>
+                                            <span>n<br>n</span>
+                                            <span>u<br>u</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <p class="word">
+                                            <span>r<br>r</span>
+                                            <span>o<br>o</span>
+                                            <span>a<br>a</span>
+                                            <span>s<br>s</span>
+                                            <span>t<br>t</span>
+                                            <span>i<br>i</span>
+                                            <span>n<br>n</span>
+                                            <span>g<br>g</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../notice/index.html">
+                                        <p class="word">
+                                            <span>n<br>n</span>
+                                            <span>o<br>o</span>
+                                            <span>t<br>t</span>
+                                            <span>i<br>i</span>
+                                            <span>c<br>c</span>
+                                            <span>e<br>e</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../login_win/index.html">
+                                        <p class="word">
+                                            <span>l<br>l</span>
+                                            <span>o<br>o</span>
+                                            <span>g<br>g</span>
+                                            <span>i<br>i</span>
+                                            <span>n<br>n</span>
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav><!-- .nav -->
+                         <div class="nav_mobile" id="headerToggle">
+                             <span></span>
+                         </div><!-- .nav_mobile -->
+                     </div><!-- .header -->
+                 </div><!-- .row -->
+            </div><!-- .container -->
+         </div><!-- #header -->
+
+         <div id="banner">
+            <div class="row">
+                <div class="banner">
+                    <span>
+                        <em>perse</em>
+                        <p>about</p>
+                    </span>
+                    <div class="scroll"><i class="fa-solid fa-arrow-down fa-beat"></i>scroll</div>
+                    <div class="v_wrap">
+                        <div class="video">
+                            <video width="50%" autoplay loop muted>
+                                <source src="./images/coffee.mp4">
+                            </video>
+                        </div><!-- .video -->
+                    </div><!-- .v_wrap -->
+                </div><!-- .banner -->
+            </div><!-- .row -->
+         </div><!-- #banner -->
+
+         <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="content">
+                        <span class="con_tit">
+                            <h2>Dive - in</h2>
+                            <p>perse coffee</p>
+                            <em>"커피속으로 뛰어들다"</em>
+                        </span>
+                        <div class="back_img">
+                            <img src="https://github.com/kimme656/about-notice_img/blob/main/sticky03.png?raw=true" alt="카페이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/banner.js"></script>
+    
+    <script>
+        const headerToggle = $("#headerToggle");
+        const nav = $(".nav");
+        const gallery = $("#gallery");
+        const content2 = $("#content2");
+        
+        headerToggle.click(function(e){
+            e.preventDefault();
+            nav.toggleClass("show");
+        })
+
+        
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+#wrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#wrap>img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-position: center center;
+}
+#log_wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.log_left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.log_left p{
+    font-size: 9vw;
+    color: #eee6de;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Merriweather'; 
+    font-weight: bold;
+}
+.log_left p::before{
+    content: "\f10e";
+    font-family:"Font Awesome 5 Free"; 
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6vw;
+}
+.log_left p::after{
+    content: "\f10d";
+    font-family:"Font Awesome 5 Free"; 
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6vw;
+}
+.log_right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.log_right .log_cont{
+    width: 40vw;
+    height: auto;
+    padding: 150px 50px;
+    background-color: rgb(238, 230, 222,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Merriweather';
+    z-index: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.log_right .log_cont > em{
+    font-size: 33px;
+    margin-bottom: 100px;
+}
+.log_right .log_cont .log_txt{
+    margin: 0 auto;
+    width: 30vw;
+    opacity: 10;
+    font-size: 20px;
+}
+.log_right .log_cont .log_txt .input_txt{
+    width: 100%;
+    height: 70px;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 0.5px solid #222;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 18px;
+    background-color: transparent;
+}
+.log_right .log_cont > p{
+    z-index: 10;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: left;
+}
+.log_right .log_cont .kakao{
+    width: 25vw;
+    height: 60px;
+    background-color: #ffe009;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    line-height: 60px;
+    position: relative;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+}
+.log_right .log_cont .kakao::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background: url(../images/kakao.png) no-repeat;
+    width: 100%;
+    height: 35px;
+}
+.log_right .log_cont .facebook{
+    width: 25vw;
+    height: 60px;
+    background-color: #4967af;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    line-height: 60px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.log_right .log_cont .facebook::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background: url(../images/facebook.png) no-repeat;
+    width: 100%;
+    height: 35px;
+}
+.log_right .log_cont ul{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+.log_right .log_cont ul li a{
+    display: block;
+    background-color: #2c423e;
+    line-height: 60px;
+    width: 12vw;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s;
+}
+.log_right .log_cont ul li a:hover{
+    background-color: #eee6de;
+    color: #2c423e;
+}
+.log_right .log_cont ul li a:nth-child(1){
+    margin-right: 12px;
+}

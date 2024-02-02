@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* 1440px */
+@media(max-width:1440px){
+    .log_right .log_cont{width: 45vw;}
+}
+
+/* 1280px */
+@media(max-width:1280px){
+    .log_right .log_cont .kakao{width: 30vw;}
+    .log_right .log_cont .facebook{width: 30vw;}
+    .log_right .log_cont ul li a{width: 14.5vw;}
+}
+
+/* 960px */
+@media(max-width:960px){
+    #log_wrap{width: 100%;height: 100vh; flex-direction: column;}
+    /* #log_wrap > img{height: 200%;} */
+    .log_left{display: none;}
+    .log_left p{display: none;}
+    .log_left{width: 100%;}
+    .log_left p{text-shadow: -2px 0 #293f3a, 0 2px #293f3a, 2px 0 #293f3a, 0 -2px #293f3a;}
+    .log_left p::before{top: -40%;}
+    .log_left p::after{bottom: -40%;}
+    .log_right{width: 100%; height: 100vh;  min-height: 960px;}
+    #wrap>img{min-height: 960px;}
+    .log_right .log_cont{width: 80vw; position: none;top: 50%;}
+    .log_right .log_cont .log_txt{width: 50vw;}
+    .log_right .log_cont > em{display: none;}
+    .log_right .log_cont .kakao{width: 50vw;}
+    .log_right .log_cont .facebook{width: 50vw;}
+    .log_right .log_cont ul li a{width: 24vw;}
+}
+
+/* 680px */
+@media(max-width:680px){
+
+    .log_right{width: 100%;height: 100%;}
+    .log_right .log_cont{width: 80vw; padding: 60px 20px; top: 50%;}
+    .log_right .log_cont .log_txt{width: 50vw;}
+    .log_right .log_cont > em{display: none;}
+    .log_right .log_cont .kakao{width: 50vw;}
+    .log_right .log_cont .facebook{width: 50vw;}
+    .log_right .log_cont ul li a{width: 24vw;}
+}
+
+/* 580px */
+@media(max-width:580px){
+    .log_right .log_cont{padding: 50px 20px;}
+    .log_right .log_cont .log_txt{width: 60vw;}
+    .log_right .log_cont .log_txt .input_txt{height: 50px;}
+    .log_right .log_cont .kakao{height: 50px; font-size: 14px; line-height: 50px; justify-content: end; padding: 0 15px; width: 60vw; margin-top: 30px;}
+    .log_right .log_cont .kakao::after{width: 30px; height: 28px; background-size: 80%; background-position: center;}
+    .log_right .log_cont .facebook{height: 50px; font-size: 14px; line-height: 50px; justify-content: end; padding: 0 15px; width: 60vw;}
+    .log_right .log_cont .facebook::after{width: 30px; height: 30px; background-size: 80%; background-position: center;}
+    .log_right .log_cont ul li a{line-height: 50px; width: 29vw;}
+}
+
+/* 380px */
+@media(max-width:480px){
+    #wrap>img{height: 100%;}
+    .log_right .log_cont{padding: 50px 20px; top: 50%;}
+}
