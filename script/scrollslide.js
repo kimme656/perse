@@ -42,7 +42,8 @@ window.addEventListener("scroll",function(){
     
 
     // console.log(document.querySelector("body").clientHeight)
-    // console.log(con5_inner_W -vh100 + footer_h + con5_slider_top + 953)
+    console.log(winW)
+    console.log(con5_slider_top)
 
     if(winW >= con5_slider_top){
         con5_inner.style.transform = `translateX(${-max}%)`

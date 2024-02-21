@@ -12,10 +12,14 @@
     .back1.on{  transform: translateY(0px) translateX(550px) scale(2.6);}
 
     /* content2 */
+    #content2{height: 100%;}
+    .content2{height: 100%;}
     #content2 > img{bottom: 2%;}
 
     /* content3 */
     @keyframes typing2{0%{width: 0%;} 100%{width: 86%;}}
+
+
 }
 
 /* 1560px */
@@ -77,6 +81,8 @@
     /* content3 */
     .content3 .cont3_txt strong,.content3 .cont3_txt em{font-size: 30px;}
     .content3 .cont3_img{height: 550px;}
+
+
 }
 
 /* 1380px */
@@ -84,6 +90,9 @@
     /* content1 */
     .con1_inner .dark_wondu img,
     .con1_inner .mild_wondu img{width: 39%;}
+    
+    /* content2 */
+    /* #content2{height: 149vh;} */
 
     /* content3 */
     @keyframes typing1{
@@ -105,6 +114,7 @@
     .cf_img{width: 320px;left: 25%;}
     .play_wrap .play{left: 21%;}
 
+    
     /* content1 */
     .content1{ padding-top: 20px; height: 850px;}
     .con1_inner .dark_wondu p,
@@ -115,6 +125,8 @@
     .con1_inner .mild_wondu span:nth-of-type(2){bottom: 10%;}
     .d_taste_box span,.m_taste_box span{font-size: 16px;padding-top: 30px;}
 
+    /* content2 */
+    /* #content2{height: 135vh;} */
 
     /* content3 */
     .content3{margin: 10% 0;}
@@ -163,6 +175,9 @@
     .d_taste_box,.m_taste_box{height: 200px;}
     .d_taste_box span, .m_taste_box span{padding-top: 20px;}
 
+    /* content2 */
+    /* #content2{height: 123vh;} */
+
     /* content3 */
     .content3 .cont3_txt strong,.content3 .cont3_txt em{font-size: 24px;}
     .content3 .cont3_img{height: 450px;}
@@ -171,6 +186,10 @@
     .content4 h5{right: -12%;}
     .content4 .best_slider{padding-left: 8%;}
     .content4 .best_slider .best_inner .b_slider .best_txt strong{font-size: calc(15px + 2.5vmin)}
+
+
+    
+
 }
 
 /* 1080px */
@@ -200,6 +219,9 @@
     .d_taste_box span, .m_taste_box span{padding-top: 20px;}
     .d_taste_box span .level{height: 8px;}
     .m_taste_box span .level{height: 8px;}
+
+    /* content2 */
+    /* #content2{height: 1200px;} */
 
     /* content3 */
     .content3 .cont3_txt strong,.content3 .cont3_txt em{font-size: 24px;}
@@ -239,6 +261,8 @@
     .con1_inner .dark_wondu img,
     .con1_inner .mild_wondu img{width: 54%;}
 
+    /* content2 */
+    /* #content2{height: 1150px;} */
 }
 
 /* 960PX */
